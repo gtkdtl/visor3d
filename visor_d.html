@@ -1,0 +1,533 @@
+<!doctype html>
+
+<html lang="es">
+
+<head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <meta name="viewport" content="width=device-width, user-scalable=no" />
+    <script type="module" src="js.js"></script>
+
+
+    <title>Visor 3D</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
+    <link rel="stylesheet" href="/style.css" />
+    <scriptA src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-geWF76RCwLtnZ8qwWowPQNguL3RmwHVBC9FhGdlKrxdiJJigb/j/68SIy3Te4Bkz" crossorigin="anonymous">
+    </scriptA>
+</head>
+
+<body>
+
+
+    <div class="visor">
+
+
+        <!-- MODAL INFO -->
+
+        <div class="modal fade" id="modal-boton-icono_info" tabindex="-1" aria-labelledby="modal-boton-icono_info"
+            aria-hidden="true">
+            <div class="modal-dialog">
+                <div class="modal-content">
+                    <div class="modal-header">
+                        <h1 class="modal-title fs-5 titulo-modal" id="boton-icono">Instrucciones</h1>
+                        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                    </div>
+                    <div class="modal-body">
+                        <h3>Móvil</h3>
+
+                        <img src="guias_gif/guia_movil.gif" alt="GIF de interacción" class="img-fluid">
+
+                        <h3>Realidad Aumentada</h3>
+                        <img src="guias_gif/guia_ar.gif" alt="GIF de interacción" class="img-fluid">
+
+                        <h3>Escritorio</h3>
+                        <img src="guias_gif/guia_pc.gif" alt="GIF de interacción" class="img-fluid">
+
+
+                    </div>
+                    <div class="modal-footer">
+                        <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Cerrar</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- TABLAS DE INFORMACIÓN  -->
+
+
+
+        <div class="modal fade" id="maquina5-modal" tabindex="-1" aria-labelledby="maquina5-modal" aria-hidden="true">
+            <div class="modal-dialog">
+                <div class="modal-content">
+                    <div class="modal-header">
+                        <h1 class="modal-title fs-5 titulo-modal" id="maquina5-modal">CAT D8T</h1>
+                        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                    </div>
+                    <div class="modal-body">
+                        <p class="texto-modal-modelo">
+                            <b>TRACTOR TOPADOR SOBRE ORUGAS (BULL DOZER)</b>
+                            <br><br>
+                            El tractor se desplaza sobre orugas, que tiene una hoja en la parte frontal que es
+                            la que se encarga de realizar el movimiento de tierras siendo una maquina sumamente
+                            versátil por lo que es de las primeras maquinarias en llegar e irse.
+                            <br> <br>
+                            <b>APLICACIONES:</b> Despalmes, desmontes, limpieza de terrenos, extender material o en
+                            general el
+                            movimiento de tierras.
+
+                        </p>
+
+                        <table class="table">
+                            <thead>
+                                <tr>
+                                    <th scope="col" class="titulo-tabla">Motor</th>
+                                    <th scope="col"></th>
+                                </tr>
+                            </thead>
+                            <tbody>
+                                <tr>
+                                    <td scope="row">Cilindrada</td>
+                                    <td>15.2L</td>
+                                </tr>
+                                <tr>
+                                    <td scope="row">Potencia Total</td>
+                                    <td>259 kW</td>
+                                </tr>
+                                <tr>
+                                    <td scope="row">Potencia Efectiva</td>
+                                    <td>231 kW</td>
+                                </tr>
+                                <tr>
+                                    <td scope="row">Modelo</td>
+                                    <td>C15 ACERT</td>
+                                </tr>
+                            </tbody>
+                        </table>
+
+                        <table class="table">
+                            <thead>
+                                <tr>
+                                    <th scope="col">Explotación</th>
+                                    <th scope="col"></th>
+                                </tr>
+                            </thead>
+                            <tbody>
+                                <tr>
+                                    <td scope="row">Peso útil</td>
+                                    <td>39795 kg</td>
+                                </tr>
+                                <tr>
+                                    <td scope="row">Combustible</td>
+                                    <td>643L</td>
+                                </tr>
+                                <tr>
+                                    <td scope="row">Aceite del motor</td>
+                                    <td>38L</td>
+                                </tr>
+                            </tbody>
+                        </table>
+
+                        <table class="table">
+                            <thead>
+                                <tr>
+                                    <th scope="col">Dimensiones</th>
+                                    <th scope="col"></th>
+                                </tr>
+                            </thead>
+                            <tbody>
+                                <tr>
+                                    <td scope="row">Lontidud con cuchilla</td>
+                                    <td>6091mm</td>
+                                </tr>
+                                <tr>
+                                    <td scope="row">Altura</td>
+                                    <td>3586mm</td>
+                                </tr>
+                            </tbody>
+                        </table>
+
+                        <table class="table">
+                            <thead>
+                                <tr>
+                                    <th scope="col">Dimensiones de la cuchilla</th>
+                                    <th scope="col"></th>
+                                </tr>
+                            </thead>
+                            <tbody>
+                                <tr>
+                                    <td scope="row">Ancho</td>
+                                    <td>3940mm</td>
+                                </tr>
+                                <tr>
+                                    <td scope="row">Altura</td>
+                                    <td>1690mm</td>
+                                </tr>
+                                <tr>
+                                    <td scope="row">Volumen</td>
+                                    <td>8.7m^3</td>
+                                </tr>
+                                <tr>
+                                    <td scope="row">Profundidad de corte</td>
+                                    <td>575mm</td>
+                                </tr>
+                            </tbody>
+                        </table>
+
+                        <table class="table">
+                            <thead>
+                                <tr>
+                                    <th scope="col">Otras características</th>
+                                    <th scope="col"></th>
+                                </tr>
+                            </thead>
+                            <tbody>
+                                <tr>
+                                    <td scope="row">Precio</td>
+                                    <td>370,000 MXN</td>
+                                </tr>
+                                <tr>
+                                    <td scope="row">-</td>
+                                    <td>-</td>
+                                </tr>
+                            </tbody>
+                        </table>
+
+
+                    </div>
+                    <div class="modal-footer">
+                        <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Cerrar</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+
+
+        <div class="modal fade" id="maquina7-modal" tabindex="-1" aria-labelledby="maquina7-modal" aria-hidden="true">
+            <div class="modal-dialog">
+                <div class="modal-content">
+                    <div class="modal-header">
+                        <h1 class="modal-title fs-5 titulo-modal" id="maquina7-modal">CAT 336</h1>
+                        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                    </div>
+                    <div class="modal-body">
+                        <p class="texto-modal-modelo">
+
+                            Es una excavadora de pala de cucharón que fue cambiado por un accesorio que es el martillo
+                            hidráulico que sirve para perforar en un terreno de difícil corte por lo que necesitamos
+                            adicionar
+                            este equipo. Posee las mismas ventajas en cuando al uso de la pluma que cualquier
+                            excavadora.
+                            <br>
+                            <br>
+                            <b>APLICACIONES:</b> En minas, canteras, bancos de agregados y a cielo abierto
+                            principalmente,
+                            enfocándose en la perforación de estos para extraer material.
+
+                        </p>
+
+                        <table class="table">
+                            <thead>
+                                <tr>
+                                    <th scope="col" class="titulo-tabla">Motor</th>
+                                    <th scope="col"></th>
+
+                                </tr>
+                            </thead>
+
+                            <tbody>
+                                <tr>
+                                    <td scope="row">Cilindrada</td>
+                                    <td>8.8L</td>
+                                </tr>
+                                <tr>
+                                    <td scope="row">Potencia efecetiva</td>
+                                    <td>198.4 kW</td>
+                                </tr>
+                                <tr>
+                                    <td scope="row">Modelo</td>
+                                    <td colspan="2">C9</td>
+                                </tr>
+                            </tbody>
+                        </table>
+
+                        <table class="table">
+                            <thead>
+                                <tr>
+                                    <th scope="col">Explotación</th>
+                                    <th scope="col"></th>
+
+                                </tr>
+                            </thead>
+
+                            <tbody>
+                                <tr>
+                                    <td scope="row">Peso útil</td>
+                                    <td>30498 kg</td>
+                                </tr>
+                                <tr>
+                                    <td scope="row">Combustible</td>
+                                    <td>620L</td>
+                                </tr>
+                                <tr>
+                                    <td scope="row">Aceite del motor</td>
+                                    <td colspan="2">40L</td>
+                                </tr>
+                            </tbody>
+                        </table>
+
+                        <table class="table">
+                            <thead>
+                                <tr>
+                                    <th scope="col">Dimensiones</th>
+                                    <th scope="col"></th>
+
+                                </tr>
+                            </thead>
+
+                            <tbody>
+                                <tr>
+                                    <td scope="row">Ancho hasta el lado exterior <br> de la cadena de oruga</td>
+                                    <td>3390mm</td>
+                                </tr>
+                                <tr>
+                                    <td scope="row">Altura hasta la parte superior <br> de la cabina</td>
+                                    <td>3140mm</td>
+                                </tr>
+                            </tbody>
+                        </table>
+                    </div>
+                    <div class="modal-footer">
+
+                        <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Cerrar</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- VISOR 3D -->
+        <model-viewer id="visor3D" src="/guia3D/Guia3D.glb" skybox-image="" shadow-intensity="0" alt="Modelo1" enable-pan ar
+            ar-modes="scene-viewer" camera-controls field-of-view="30deg" min-field-of-view="10deg"
+            camera-orbit="150deg 80deg 0m" class="script">
+
+            <div class="row">
+                <div class="col-sm-12">
+                    <h1 class="Titulo">Visor 3D</h1>
+                </div>
+            </div>
+
+
+            <!--*********************** ICONOS INTERFAZ ***********************************-->
+            <button id="boton-icono_ar" class="boton-icono" slot="ar-button"
+                style="position: absolute; top: 55px; right: 6px; ">
+                <img src="iconos/icon_ar.png" alt="">
+            </button>
+
+            <button id="boton-icono_info" slot="" class="boton-icono" data-bs-toggle="modal"
+                data-bs-target="#modal-boton-icono_info">
+                <img src="iconos/icon_info.png" alt="i">
+            </button>
+
+            <button id="boton-icono_cargar" slot="" class="boton-icono">
+                <img src="iconos/icon_cargar.png" alt="excavar">
+            </button>
+
+            <button id="boton-icono_compactar" slot="" class="boton-icono">
+                <img src="iconos/icon_compactar.png" alt="i">
+            </button>
+
+            <button id="boton-icono_conformar" slot="" class="boton-icono">
+                <img src="iconos/icon_conformar.png" alt="i">
+            </button>
+
+            <button id="boton-icono_excavar" slot="" class="boton-icono">
+                <img src="iconos/icon_excavar.png" alt="i">
+            </button>
+
+            <button id="boton-icono_transportar" slot="" class="boton-icono">
+                <img src="iconos/icon_transportar.png" alt="i">
+            </button>
+
+
+            <div class="row">
+                <div class="col-sm-12">
+
+
+                    <div class="modal-dialog modal-dialog-scrollable modal-lg modal-menu-modelos" id="modelos-modal"
+                        tabindex="-1" aria-labelledby="modelos-modal" aria-hidden="true">
+                        <div class="modal-dialog modal-menu-modelos">
+                            <div class="modal-content">
+                                <div class="modal-header">
+                                </div>
+                                <div class="modal-body">
+
+
+                                    <div class="list-group list-group-horizontal">
+
+                                        <!-- **************** MAQUINAS **************** -->
+
+
+
+                                        <button type="button" class="list-group-item imagen-menu-maquinaria"
+                                            id="maquina5" slot="hotspot-1" data-orbit=""
+                                            data-visibility-attribute="visible" data-target="">
+                                            <img src="img_menu3D/1.png" alt="Máquina 5" class="img-fluid">
+                                        </button>
+
+
+
+                                        <button type="button" class="list-group-item imagen-menu-maquinaria"
+                                            id="maquina7" slot="hotspot-1" data-orbit=""
+                                            data-visibility-attribute="visible" data-target="">
+                                            <img src="img_menu3D/2.png" alt="Máquina 7" class="img-fluid">
+                                        </button>
+
+
+
+
+
+
+                                    </div>
+
+                                </div>
+
+                            </div>
+                        </div>
+                    </div>
+
+                    <!--
+                    <div class="dropdown">
+
+                        <button class="btn-primary dropdown-toggle maquina-boton" type="button"
+                            data-bs-toggle="dropdown" aria-expanded="false">
+                            Maquinas
+                        </button>
+                        <ul class="dropdown-menu menu-maquinas">
+
+
+
+                            <li><button id="maquina1" class="botones-lista" slot="hotspot-1" data-orbit=""
+                                    data-visibility-attribute="visible" data-target="" camera-target="0m 0m 0m">
+                                    Maquina 1
+                                </button>
+
+
+
+                            </li>
+                            <li>
+                                <button id="maquina2" class="botones-lista" slot="hotspot-1" data-orbit=""
+                                    data-visibility-attribute="visible" data-target="">
+                                    Maquina 2
+                                </button>
+                            </li>
+
+                            <li>
+                                <button id="maquina3" class="botones-lista" slot="hotspot-1" data-orbit=""
+                                    data-visibility-attribute="visible" data-target="">
+                                    Maquina 3
+                                </button>
+                            </li>
+
+                            <li>
+                                <button id="maquina4" class="botones-lista" slot="hotspot-1" data-orbit=""
+                                    data-visibility-attribute="visible" data-target="">
+                                    Maquina 4
+                                </button>
+                            </li>
+
+                            <li>
+                                <button id="maquina5" class="botones-lista" slot="hotspot-1" data-orbit=""
+                                    data-visibility-attribute="visible" data-target="">
+                                    Maquina 5
+                                </button>
+                            </li>
+
+                            <li>
+                                <button id="maquina6" class="botones-lista" slot="hotspot-1" data-orbit=""
+                                    data-visibility-attribute="visible" data-target="">
+                                    Maquina 6
+                                </button>
+                            </li>
+
+                            <li>
+                                <button id="maquina7" class="botones-lista" slot="hotspot-1" data-orbit=""
+                                    data-visibility-attribute="visible" data-target="">
+                                    Maquina 7
+                                </button>
+                            </li>
+
+                            <li><button id="maquina6" class="botones-lista" slot="hotspot-1" data-orbit=""
+                                    data-visibility-attribute="visible" data-target="">Maquina 6</button></li>
+
+                            <li><button id="maquina7" class="botones-lista" slot="hotspot-1" data-orbit=""
+                                    data-visibility-attribute="visible" data-target="">Maquina 7</button></li>
+
+                            <li><button id="maquina8" class="botones-lista" slot="hotspot-1" data-orbit=""
+                                    data-visibility-attribute="visible" data-target="">Maquina 8</button></li>
+
+                            <li><button id="maquina9" class="botones-lista" slot="hotspot-1" data-orbit=""
+                                    data-visibility-attribute="visible" data-target="">Maquina 9</button></li>
+
+                            <li><button id="maquina10" class="botones-lista" slot="hotspot-1" data-orbit=""
+                                    data-visibility-attribute="visible" data-target="">Maquina 10</button></li>
+
+                            <li><button id="maquina11" class="botones-lista" slot="hotspot-1" data-orbit=""
+                                    data-visibility-attribute="visible" data-target="">Maquina 11</button></li>
+
+                            <li><button id="maquina12" class="botones-lista" slot="hotspot-1" data-orbit=""
+                                    data-visibility-attribute="visible" data-target="">Maquina 12</button></li>
+
+                            <li><button id="maquina13" class="botones-lista" slot="hotspot-1" data-orbit=""
+                                    data-visibility-attribute="visible" data-target="">Maquina 13</button></li>
+
+                            <li><button id="maquina14" class="botones-lista" slot="hotspot-1" data-orbit=""
+                                    data-visibility-attribute="visible" data-target="">Maquina 14</button></li>
+
+                            <li><button id="maquina15" class="botones-lista" slot="hotspot-1" data-orbit=""
+                                    data-visibility-attribute="visible" data-target="">Maquina 15</button></li>
+
+                            <li><button id="maquina16" class="botones-lista" slot="hotspot-1" data-orbit=""
+                                    data-visibility-attribute="visible" data-target="">Maquina 16</button></li>
+
+                            <li><button id="maquina17" class="botones-lista" slot="hotspot-1" data-orbit=""
+                                    data-visibility-attribute="visible" data-target="">Maquina 17</button></li>
+
+                            <li><button id="maquina18" class="botones-lista" slot="hotspot-1" data-orbit=""
+                                    data-visibility-attribute="visible" data-target="">Maquina 18</button></li>
+
+                            <li><button id="maquina19" class="botones-lista" slot="hotspot-1" data-orbit=""
+                                    data-visibility-attribute="visible" data-target="">Maquina 19</button></li>
+
+                            <li><button id="maquina20" class="botones-lista" slot="hotspot-1" data-orbit=""
+                                    data-visibility-attribute="visible" data-target="">Maquina 20</button></li>
+
+                        </ul>
+                    </div>
+                    -->
+                </div>
+
+
+
+
+
+        </model-viewer>
+
+
+
+
+    </div>
+    <script type="text/javascript" src="visor.js"></script>
+
+
+
+
+
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha3/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-ENjdO4Dr2bkBIFxQpeoTz1HIcje39Wm4jDKdf19U8gI4ddQ3GYNS7NTKfAdVQSZe"
+        crossorigin="anonymous"></script>
+</body>
+
+</html>

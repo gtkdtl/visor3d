@@ -1,0 +1,227 @@
+.Titulo {
+  text-align: center;
+  background-color: rgb(0, 0, 0);
+  color: rgb(240, 241, 244);
+  background: rgba(0, 0, 0, 0.5);
+  box-shadow: 0 4px 30px rgba(0, 0, 0, 0);
+  backdrop-filter: blur(4px);
+  -webkit-backdrop-filter: blur(4px);
+}
+
+.visor {
+  align-items: center;
+}
+
+/* ASPECTO DE BOTONES DE LISTA DROPDOWN*/
+
+.menu-maquinas {
+  width: auto;
+  border-radius: 0.5em;
+  align-content: center;
+  border-style: solid;
+  background: rgba(12, 13, 12, 0.21);
+  border-radius: 16px;
+  box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
+  backdrop-filter: blur(4px);
+  -webkit-backdrop-filter: blur(4px);
+}
+
+.botones-lista {
+  background-color: rgb(255, 255, 255);
+  border-radius: 1em;
+  margin: 0em 1em;
+}
+
+/* MODEL VIEWER */
+
+model-viewer {
+  width: auto;
+  height: 95vh;
+  border-radius: 1em;
+  border-style: solid;
+  border-color: rgb(13, 4, 66);
+  margin: 1em 1em;
+  background-color: rgba(255, 255, 255, 0.973);
+}
+
+/* Galería
+*/
+
+.galeria {
+  width: 100%;
+  border-radius: 1em;
+}
+
+.galeria img {
+  width: 100%;
+  border-radius: 1em;
+  margin-top: 0.5em;
+  margin-bottom: 0.5em;
+}
+
+/* TABLA DE MODELOS VISOR */
+
+.list-group {
+  align-items: center;
+  background-color: unset;
+  border: none; /* En caso de que no desees bordes adicionales */
+}
+
+/* IMAGENES DE MODAL VISOR */
+
+.modal-menu-modelos {
+  background-color: rgba(0, 255, 42, 0);
+  position: absolute;
+  bottom: 1%;
+  left: 50%;
+  transform: translateX(-50%);
+  width: 100%;
+  border: none; /* En caso de que no desees bordes adicionales */
+}
+
+.list-group-item {
+  background-color: rgba(252, 125, 125, 0.568);
+  border: none; /* En caso de que no desees bordes adicionales */
+  justify-content: center;
+  margin-left: 0.3em;
+  /* Asegúrate de que los botones tengan un tamaño mínimo si están apareciendo muy pequeños */
+  min-width: 50px; /* O cualquier otro tamaño que se ajuste a tu diseño */
+  min-height: 50px; /* O cualquier otro tamaño que se ajuste a tu diseño */
+  background-color: rgba(250, 235, 215, 0);
+  align-items: center;
+  display:flex;
+
+}
+
+.imagen-menu-maquinaria img {
+  max-width: 50%; /* Permite que la imagen crezca hasta el máximo ancho del contenedor */
+  object-fit: contain; /* Esto hará que la imagen se ajuste dentro del botón sin recortarse */
+  border: none; /* En caso de que no desees bordes adicionales */
+  background-color: rgba(127, 255, 212, 0);
+  align-content: center;
+  border-radius: 1em;
+}
+
+/* Si deseas asegurarte de que las imágenes no se vuelvan más grandes de lo deseado */
+.img-fluid {
+  max-width: 100%; /* Esto limitará la imagen al ancho del contenedor */
+  height: auto; /* Esto mantendrá la proporción de la imagen */
+  display: block; /* Esto eliminará cualquier espacio extra debajo de la imagen */
+  background-color: black;
+  align-items: center;
+}
+
+/* Botones ICONOS */
+
+#boton-icono_ar {
+  position: absolute;
+  background: none;
+  border: none;
+  cursor: pointer;
+}
+
+.boton-icono img {
+  max-width: 30px;
+  max-height: 30px;
+  background-color: unset;
+  background-color: white;
+  border-radius: 0.2em;
+  padding: 0em;
+}
+
+#boton-icono_info {
+  position: absolute;
+  top: 55px;
+  left: 10px;
+  background: none;
+  border: none;
+  cursor: pointer;
+}
+
+
+
+#boton-icono_cargar {
+  position: absolute;
+  top: 55px;
+  left: 60px;
+  background: none;
+  border: none;
+  cursor: pointer;
+}
+
+#boton-icono_compactar {
+  position: absolute;
+  top: 55px;
+  left: 110px;
+  background: none;
+  border: none;
+  cursor: pointer;
+}
+
+#boton-icono_conformar {
+  position: absolute;
+  top: 55px;
+  left: 160px;
+  background: none;
+  border: none;
+  cursor: pointer;
+}
+
+#boton-icono_excavar {
+  position: absolute;
+  top: 55px;
+  left: 210px;
+  background: none;
+  border: none;
+  cursor: pointer;
+}
+
+#boton-icono_transportar {
+  position: absolute;
+  top: 55px;
+  left: 260px;
+  background: none;
+  border: none;
+  cursor: pointer;
+}
+
+/*  TEXTOS MODALES VISOR 3D*/
+
+.texto-modal-modelo {
+  text-align: justify;
+}
+
+th .titulo-tabla {
+  background-color: red;
+  color: red;
+}
+
+
+/* ANIMACION */
+
+.move-button {
+  animation: move 1s ease infinite alternate;
+}
+
+@keyframes heartbeat {
+  0% {
+    transform: scale(1);
+  }
+  50% {
+    transform: scale(1.2); /* Ajusta el factor de escala para controlar el tamaño */
+  }
+  100% {
+    transform: scale(1);
+  }
+}
+
+.heartbeat-animation {
+  animation: heartbeat 1s infinite;
+}
+
+
+/* INTRUCCIONES */
+
+h3 {
+  color: green;
+}
