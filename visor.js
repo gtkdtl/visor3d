@@ -36,7 +36,7 @@ botonMaquina5.addEventListener("click", function () {
 
 botonMaquina7.addEventListener("click", function () {
     // Cambia el atributo src del <model-viewer> al valor deseado
-    modelo3D.setAttribute("src", "modelos_P1/8_MartilloHidraulico_336.glb");
+    modelo3D.setAttribute("src", "https://cdn.glitch.me/3c21a4c8-87b9-4f32-9789-824424707981/8_MartilloHidraulico_336.glb?v=1701040526162");
 
     botonCargar.style.display = "none";
     botonCompactar.style.display = "none";
