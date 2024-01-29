@@ -247,13 +247,13 @@ button.list-group-item {
   border: none;
   margin-left: 0.3em;
 
-  min-width: 150px;
-  min-height: 150px;
+  min-width: 50px;
+  min-height: 50px;
 }
 
 .imagen-menu-maquinaria img {
-  max-width: 50%;
-  max-height: 50%;
+  max-width: 100%;
+  max-height: 100%;
   object-fit: contain;
   border: none;
   border-radius: 1em;
