@@ -246,7 +246,7 @@ button.list-group-item {
   background-color: rgba(214, 0, 0, 0);
   border: none;
   margin-left: 0.3em;
-
+  width: 100%;
   min-width: 150px;
   min-height: 150px;
 }
