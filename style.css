@@ -1,3 +1,30 @@
+p,
+h1,
+h2,
+h3,
+h4 {
+  font-family: "Times New Roman", Times, serif;
+}
+
+.navbar {
+  background-color: rgb(255, 255, 255);
+  border-radius: 1em;
+  align-content: center;
+  padding: 0.5em 0em;
+  margin: 0.5em;
+  margin-bottom: 0em;
+  border-style: 2px solid;
+  box-shadow: 0px 0px 16px 0px rgba(0, 0, 0, 0.1);
+}
+
+.nav-item {
+  background-color: rgba(0, 0, 0, 0);
+}
+
+.nav-item:hover {
+  background-color: rgb(208, 204, 204);
+}
+
 .Titulo {
   text-align: center;
   background-color: rgb(0, 0, 0);
@@ -12,6 +39,77 @@
   align-items: center;
 }
 
+/* CSS INDEX */
+
+.card-index {
+  background-color: rgb(255, 255, 255);
+  border-radius: 0.5em;
+  text-align: center;
+  padding: 1em 1em;
+  box-shadow: 0px 0px 16px 0px rgba(0, 0, 0, 0.1);
+}
+
+.texto-index {
+  text-align: justify;
+  padding: 0em 1em;
+}
+
+.texto-contador {
+  text-align: center;
+}
+
+.list-group-item {
+  background-color: rgba(0, 0, 0, 0);
+  width: auto;
+}
+
+.container-index {
+  margin: 1em 0em;
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+}
+
+.contador-index {
+  display: grid;
+}
+
+.portada {
+  width: 100%;
+  align-content: center;
+  padding: 1em;
+  background-color: rgba(0, 255, 255, 0);
+  border-radius: 2em;
+}
+
+.portada:hover {
+  border-radius: 2.1em;
+  box-shadow: 0px 10px 20px 0px rgba(0, 0, 0, 0.2);
+
+  transform: translateY(-10px);
+}
+
+.bloque-texto-index {
+  padding-top: 1em;
+  background-color: rgba(255, 0, 0, 0);
+  border-radius: 1em;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+  font-size: 16px;
+}
+
+.bloque-texto-index:hover {
+  background-color: rgba(0, 0, 255, 0);
+  box-shadow: 1px 1px 10px 1px rgba(0, 0, 0, 0.2);
+  transform: translateY(-5px);
+}
+.creditos {
+  padding: 3em;
+}
+
+video {
+  border-radius: 0.5em;
+  margin-top: 1em;
+}
 /* ASPECTO DE BOTONES DE LISTA DROPDOWN*/
 
 .menu-maquinas {
@@ -36,80 +134,15 @@
 
 model-viewer {
   width: auto;
-  height: 95vh;
+  height: 90vh;
   border-radius: 1em;
-  border-style: solid;
-  border-color: rgb(13, 4, 66);
-  margin: 1em 1em;
+  box-shadow: 0px 0px 6px 4px rgba(0, 0, 0, 0.1);
+  border-color: rgb(0, 0, 0);
+  margin: 0.5em 1em;
   background-color: rgba(255, 255, 255, 0.973);
 }
 
-/* Galería
-*/
-
-.galeria {
-  width: 100%;
-  border-radius: 1em;
-}
-
-.galeria img {
-  width: 100%;
-  border-radius: 1em;
-  margin-top: 0.5em;
-  margin-bottom: 0.5em;
-}
-
-/* TABLA DE MODELOS VISOR */
-
-.list-group {
-  align-items: center;
-  background-color: unset;
-  border: none; /* En caso de que no desees bordes adicionales */
-}
-
-/* IMAGENES DE MODAL VISOR */
-
-.modal-menu-modelos {
-  background-color: rgba(0, 255, 42, 0);
-  position: absolute;
-  bottom: 1%;
-  left: 50%;
-  transform: translateX(-50%);
-  width: 100%;
-  border: none; /* En caso de que no desees bordes adicionales */
-}
-
-.list-group-item {
-  background-color: rgba(252, 125, 125, 0.568);
-  border: none; /* En caso de que no desees bordes adicionales */
-  justify-content: center;
-  margin-left: 0.3em;
-  /* Asegúrate de que los botones tengan un tamaño mínimo si están apareciendo muy pequeños */
-  min-width: 50px; /* O cualquier otro tamaño que se ajuste a tu diseño */
-  min-height: 50px; /* O cualquier otro tamaño que se ajuste a tu diseño */
-  background-color: rgba(250, 235, 215, 0);
-  align-items: center;
-  display:flex;
-
-}
-
-.imagen-menu-maquinaria img {
-  max-width: 50%; /* Permite que la imagen crezca hasta el máximo ancho del contenedor */
-  object-fit: contain; /* Esto hará que la imagen se ajuste dentro del botón sin recortarse */
-  border: none; /* En caso de que no desees bordes adicionales */
-  background-color: rgba(127, 255, 212, 0);
-  align-content: center;
-  border-radius: 1em;
-}
-
-/* Si deseas asegurarte de que las imágenes no se vuelvan más grandes de lo deseado */
-.img-fluid {
-  max-width: 100%; /* Esto limitará la imagen al ancho del contenedor */
-  height: auto; /* Esto mantendrá la proporción de la imagen */
-  display: block; /* Esto eliminará cualquier espacio extra debajo de la imagen */
-  background-color: black;
-  align-items: center;
-}
+/* Barra de progreso */
 
 /* Botones ICONOS */
 
@@ -129,7 +162,7 @@ model-viewer {
   padding: 0em;
 }
 
-#boton-icono_info {
+#boton-icono {
   position: absolute;
   top: 55px;
   left: 10px;
@@ -138,7 +171,14 @@ model-viewer {
   cursor: pointer;
 }
 
-
+#boton-icono_info {
+  position: absolute;
+  top: 55px;
+  left: 10px;
+  background: none;
+  border: none;
+  cursor: pointer;
+}
 
 #boton-icono_cargar {
   position: absolute;
@@ -185,17 +225,94 @@ model-viewer {
   cursor: pointer;
 }
 
+/* IMAGENES DE MODAL VISOR */
+
+.modal-menu-modelos {
+  position: absolute;
+  bottom: 1%;
+  left: 50%;
+  transform: translateX(-50%);
+  width: 98%;
+  padding: 0em;
+  margin: 0em;
+  height: auto;
+  backdrop-filter: blur(50px) saturate(0%);
+  -webkit-backdrop-filter: blur(14px) saturate(0%);
+  background-color: rgba(255, 255, 255, 0);
+  border-radius: 12px;
+}
+
+button.list-group-item {
+  background-color: rgba(214, 0, 0, 0);
+  border: none;
+  margin-left: 0.3em;
+
+  min-width: 150px;
+  min-height: 150px;
+}
+
+.imagen-menu-maquinaria img {
+  max-width: 100%;
+  max-height: 100%;
+  object-fit: contain;
+  border: none;
+  border-radius: 1em;
+}
+
+.imagen-menu-maquinaria img:hover {
+  background-color: rgba(67, 64, 64, 0.303);
+  border-radius: 1em;
+  box-shadow: 4px 7px 14px 0px rgba(0, 0, 0, 0.1);
+  border-style: solid;
+}
+
+/* button.img-fluid {
+  max-width: 100%; 
+  height: auto; 
+  display: block; 
+} */
+
+/* Galería
+*/
+
+.galeria {
+  width: 100%;
+  border-radius: 1em;
+  text-align: center;
+  background-color: rgba(250, 235, 215, 0);
+}
+
+.galeria img {
+  width: 75%;
+  border-radius: 1em;
+  margin-top: 0.5em;
+  margin-bottom: 0.5em;
+  background-color: rgba(0, 255, 255, 0);
+}
+
+.galeria img:hover {
+  box-shadow: 4px 7px 14px 0px rgba(0, 0, 0, 0.1);
+}
+
+/* TABLA DE MODELOS VISOR */
+
+.list-group {
+  align-items: center;
+  background-color: unset;
+  border: none;
+}
+
 /*  TEXTOS MODALES VISOR 3D*/
 
 .texto-modal-modelo {
   text-align: justify;
+  font-size: 16px;
 }
 
 th .titulo-tabla {
   background-color: red;
   color: red;
 }
-
 
 /* ANIMACION */
 
@@ -208,7 +325,7 @@ th .titulo-tabla {
     transform: scale(1);
   }
   50% {
-    transform: scale(1.2); /* Ajusta el factor de escala para controlar el tamaño */
+    transform: scale(1.2);
   }
   100% {
     transform: scale(1);
@@ -219,9 +336,29 @@ th .titulo-tabla {
   animation: heartbeat 1s infinite;
 }
 
-
 /* INTRUCCIONES */
 
-h3 {
+.titulo-info {
   color: green;
+}
+
+/* PORTADAS DE GALERIAS */
+
+.portada_galeria img {
+  width: 100%;
+  padding: 0em;
+  margin: 0em;
+  border-radius: 1em;
+}
+.portada_galeria {
+  background-color: rgb(255, 255, 255);
+  width: auto;
+  border-radius: 1em;
+  border-style: none;
+  margin: 1em;
+  box-shadow: 4px 7px 14px 0px rgba(0, 0, 0, 0.1);
+}
+
+.portada_galeria:hover {
+  box-shadow: 4px 7px 14px 0px rgba(0, 0, 0, 0.2);
 }
